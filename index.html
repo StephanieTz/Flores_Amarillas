@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Día de Flores Amarillas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Capa de Fondo: Estrellas -->
+    <canvas id="capaFondo"></canvas>
+    
+    <!-- Capa de Frente: Flores -->
+    <canvas id="capaFlores"></canvas>
+    
+    <!-- Título -->
+    <h1 class="titulo" id="tituloPrincipal">FELIZ DÍA DE FLORES AMARILLAS MI FLORICIENTA</h1>
+
+    <!-- ====== SOBRE Y CARTAS ====== -->
+    <div class="escena-carta">
+        <div class="sobre" id="sobre">
+            <div class="cuerpo-sobre"></div>
+            <div class="solapa-sobre"></div>
+            <div class="corazon-sobre">❤️</div>
+            <button class="btn-abrir" id="btnAbrir">Ábreme</button>
+        </div>
+
+        <div class="cartas-contenedor" id="cartasContenedor">
+            <!-- Hoja 1 -->
+            <div class="carta carta-1" id="carta1">
+                <p>"Regalar flores amarillas el 21 de septiembre simboliza alegría, amistad, esperanza, nuevos comienzos y paz."</p>
+                <button class="btn-siguiente" data-target="carta2">Siguiente</button>
+            </div>
+            
+            <!-- Hoja 2 -->
+            <div class="carta carta-2" id="carta2">
+                <p>"En este día quiero recordarte que siempre serás una persona importante en mi vida, que tu presencia siempre me ha causado mucha felicidad. No soy una persona perfecta, tengo mis virtudes y mis puntos a mejorar, pero tú me has mostrado que hay personas que saben ver más allá de lo externo y los defectos - gracias por ser esa semilla que hizo florecer en mi corazón un jardín lleno de flores; y como dijo el principito: "Si alguien ama a una flor de la que sólo existe un ejemplar en millones y millones de estrellas, basta que la mire para ser dichoso." - gracias por ser esa flor en mi vida."</p>
+                <button class="btn-siguiente" data-target="carta3">Siguiente</button>
+            </div>
+
+            <!-- Hoja 3 (La imagen) -->
+            <div class="carta carta-3" id="carta3">
+                <div class="imagen-contenedor">
+                    <!-- La ruta debe ser relativa a la carpeta donde esté el index.html -->
+                    <img src="imagen/1.jpg" alt="Broma de flores amarillas">
+                </div>
+                <button class="btn-siguiente" data-target="carta4">Siguiente</button>
+            </div>
+
+            <!-- Hoja 4 (Bromita) -->
+            <div class="carta carta-4" id="carta4">
+                <p style="text-align: center; font-size: 1.5rem; font-weight: bold; color: #d32f2f;">"Bromita" 😂</p>
+                <img src="imagen/2.jpg" alt="Broma de flores amarillas">
+                <button class="btn-cerrar" id="btnCerrar">Cerrar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ====== ESCENA FINAL (Galaxia y despedida) ====== -->
+    <div class="escena-final" id="escenaFinal">
+        <h2 class="texto-final">"Gracias por ser mi flor en esta vida, en este momento y en este universo"</h2>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12/dist/gsap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
